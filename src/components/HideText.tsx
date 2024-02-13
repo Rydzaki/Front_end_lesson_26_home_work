@@ -10,10 +10,17 @@ export default function HideText() {
 
 
   return (
-    <div>
-        {statustText && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis exercitationem ipsam explicabo et, alias hic ut facilis, velit maxime delectus vitae nam eveniet corporis optio provident libero qui. Temporibus!</p>}
-        <button onClick={changeHandler}>{statustText ? "hide text" : "show text"}
+
+        <div>
+      <button onClick={changeHandler}>{statustText ? "hide text" : "show text"}
         </button>
+
+        {statustText && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perspiciatis exercitationem ipsam explicabo et, alias hic ut facilis, velit maxime delectus vitae nam eveniet corporis optio provident libero qui. Temporibus!</p>}
+        
     </div>
   )
 }
+
+// _ && _ (выведит правый операнд если левый true)
+// _ || _ (выведит правый операнд если левый false)
+// _ ?? _ (оператор нулевого слияния) (выведит правый операнд если левый undefined или null)
